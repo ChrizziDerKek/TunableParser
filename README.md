@@ -29,4 +29,6 @@ template <typename T>
 T* get_tunable(uint32_t hash) {
   return (T*)get_global(tunables[hash]);
 }
+
+*get_tunable<BOOL>(CONSTEXPR_JOAAT("TURN_SNOW_ON_OFF")) = TRUE;
 ```
