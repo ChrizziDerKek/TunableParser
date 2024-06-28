@@ -168,7 +168,7 @@ int main(int argc, char** argv) {
 	}
 	//Create an output file and store the content of the unordered map in it
 	file = std::fstream();
-	file.open("output.txt", std::ios::out | std::ios::app);
+	file.open("output.txt", std::ios::out);
 	for (auto it = globals.begin(); it != globals.end(); it++)
 		file << formatter(it->first, it->second) << std::endl;
 	file.close();
